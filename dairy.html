@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+	<title>Agrosumy dairy Products</title>
+</head>
+<body>
+	<!------Top Nav-bar section----->
+	<div class="top-navbar">
+		<div class="search-box">
+		<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+		<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+
+			<a href="index.html"><img src="image/logo4.jpg" class="logo"></a>
+			<input type="text" class="form-control">
+			<span class="input-group-text"><i class="fa fa-search"></i></span>
+		</div>
+		<div class="menu-bar">
+			<ul>
+				<li><a href="index.html"></i>Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!------our products-header----->
+	<div class="dairy-img">
+		<div class="container">
+			<div class="product-text">
+		    <h1>Our Products</h1>
+		</div>
+		</div>
+	</div>
+
+	<!--------Single product--------->
+	<section class="single-product">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					
+					<div id="product-slider" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/bee-honey3.jpg" class="d-block" alt="bee honey">
+    </div>
+    <div class="carousel-item">
+      <img src="image/egg-powder1.jpg" class="d-block" alt="egg powder">
+    </div>
+    <div class="carousel-item">
+      <img src="image/unsalted-butter1.png" class="d-block" alt="unsalted butter">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#product-slider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#product-slider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+				</div>
+
+				<div class="col-md-7">
+					<p class="new-arrival text-center">DAIRY</p>
+					<p>The amount of dairy foods you need to eat depends on your age. The amount each person needs can vary between 2 and 3 cups each day. Those who are very physically active may need more. Recommended daily amounts are shown in the table below.</p>
+
+					<!--<p>ISO SGS Certified</p>
+
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+
+					<p class="price">USD $380.00/MT</p>
+					<p><b>Availability:</b> In Stock</p>
+					<p><b>Condition:</b> Refined</p>
+					<p><b>Brand:</b> XYZ Company</p>
+					<label>Quantity: </label>
+					<input type="text" value="1">
+					<button type="button" class="btn btn-primary">Add to cart</button>---->
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<!---------products and description-------->
+	<section class="grid">
+		<div class="container">
+			<h1><span>Dairy:</span></h1>
+			<div class="product-grid">
+
+
+				<div class="grid-box">
+					<h1>Honey</h1>
+				<div class="flex-right">
+					<p>The amount of dairy foods you need to eat depends on your age. The amount each person needs can vary between 2 and 3 cups each day. Those who are very physically active may need more. Recommended daily amounts are shown in the table below.</p>
+					<img src="image/honey-1.jpg">
+					</div>
+					<button class="grid-btn"><a href="contact.html">Send Inquiry</a></button>
+				</div>
+
+				<div class="grid-box">
+					<h1>Unsalted Butter</h1>
+				<div class="flex-right">
+					<p>The product is a solid emulsion of water in oil, pale yellow, creamy and homogenous with no streakiness or evident free moisture. Manufactured from fresh pasteurised cream derived from whole cow-milk, chilled and aged prior to churning on a continuous butter-maker to give a finished product with not less than 80% fat and non-salted.</p>
+					<img src="image/unsalted-butter1.png">
+					</div>
+					<button class="grid-btn"><a href="contact.html">Send Inquiry</a></button>
+				</div>
+
+				<div class="grid-box">
+					<h1>Full Cream Powdered Milk</h1>
+				<div class="flex-right">
+					<p>Produced from fresh, high quality, full-fat milk by a spray-drying process</p>
+					<img src="image/full-cream-milk1.jpg">
+					</div>
+					<button class="grid-btn"><a href="contact.html">Send Inquiry</a></button>
+				</div>
+
+				<div class="grid-box">
+					<h1>Butter Salted</h1>
+				<div class="flex-right">
+					<p>The product is a solid emulsion of water in oil, pale yellow, creamy and homogenous with no streakiness or evident free moisture. Manufactured from fresh pasteurised cream derived from whole cow milk, chilled and aged prior to churning and salting on a continuous butter-maker to give a finished product of not less than 80% fat and a salt content not exceeding 2.0%.</p>
+					<img src="image/butter-salted2.jpg">
+					</div>
+					<button class="grid-btn"><a href="contact.html">Send Inquiry</a></button>
+				</div>
+
+				<div class="grid-box">
+					<h1>Skimmed Milk</h1>
+				<div class="flex-right">
+					<p>Skim milk powder is obtained by removing water from pasteurized skim milk. It contains 5% or less moisture (by weight) and 1.5% or less milk fat (by weight). By removing moisture to the greatest extent possible, microbial growth is prevented. Skim Milk powder is classified for use as an ingredient according to the heat treatment used in its manufacture.</p>
+					<img src="image/skimmed-milk1.jpg">
+					</div>
+					<button class="grid-btn"><a href="contact.html">Send Inquiry</a></button>
+				</div>
+
+				<div class="grid-box">
+					<h1>Egg Powder</h1>
+				<div class="flex-right">
+					<p>Powdered eggs are fully dehydrated eggs. They are made using spray drying in the same way that powdered milk is made. The major advantages of powdered eggs over fresh eggs are the price, reduced weight per volume of whole egg equivalent, and the shelf life. Other advantages include smaller usage of storage space, and lack of need for refrigeration. Powdered eggs can be used without rehydration when baking, and can be rehydrated to make dishes such as scrambled eggs and omelettes.</p>
+					<img src="image/egg-powder1.jpg">
+					</div>
+					<button class="grid-btn"><a href="contact.html">Send Inquiry</a></button>
+				</div>
+
+
+			</div>
+			
+		</div>
+	</section>
+
+	<hr>
+
+	
+<!------view all products----->
+	<div class="all-products">
+		<div class="container">
+			<div class="product-box">
+			<p><a href="sugar.html">View More Products</a></p>
+			</div>
+		</div>
+	</div>
+
+	<!------footer----->
+	<section class="footer">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-3">
+					<h1>Our Vision</h1>
+					<p class="color">We work to realize our vision for a safe and sustainable future, contributing to the global effort to provide sustenance for a growing population.</p>
+				</div>
+
+				<div class="col-md-3">
+					<h1>Useful Links</h1>
+					<p><a href="index.html">Home</a></p>
+					<p><a href="products.html">Products</a></p>
+					<p><a href="about.html">About Us</a></p>
+					<p><a href="contact.html">Contact Us</a></p>
+				</div>
+
+				<div class="col-md-3">
+					<h1>Contact Us</h1>
+					<p><i class="fa fa-envelope-o"></i>info@agrosumy.com<br></p>
+					<p><i class="fa fa-whatsapp"></i><i class="fa fa-phone"></i>+380 95 554 8161</p>
+					<p><i class="fa fa-whatsapp"></i><i class="fa fa-phone"></i>+7(926) 808-23-86</p>
+					<p><i class="fa fa-map-marker"></i>6a, kv. 2/3, ulitsa Toreza M Shymkent Kazakhstan</p>
+				</div>
+
+				<div class="col-md-3 footer-image">
+					<h1>Our Company</h1>
+
+					<iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.6785913081585!2d32.24405855070854!3d48.50105487915229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d042964cd47a85%3A0xc0d72b4fd74661be!2sSoborna%20St%2C%2022%2C%20Kirovohrad%2C%20Kirovohrads&#39;ka%20oblast%2C%20Kazakhstan%2C%2025000!5e0!3m2!1sde!2sde!4v1608671399422!5m2!1sde!2sde" width="180"></iframe>
+				</div>
+
+			</div>
+			<hr>
+			<p class="copyright">All right reserved <i class="fa fa-heart-o"></i> &copy2023 Agrosumy LLC</p>
+		</div>
+	</section>
+
+
+	<script>
+		function openmenu()
+		{
+			document.getElementById("side-menu").style.display="block";
+			document.getElementById("menu-btn").style.display="none";
+			document.getElementById("close-btn").style.display="block";
+		}
+		function closemenu()
+		{
+			document.getElementById("side-menu").style.display="none";
+			document.getElementById("menu-btn").style.display="block";
+			document.getElementById("close-btn").style.display="none";
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+	<title>Agrosumy</title>
+</head>
+<body>
+	
+	<!------Top Nav-bar section----->
+	<div class="top-navbar">
+		<div class="search-box">
+		<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+		<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+
+			<img src="image/logo4.jpg" class="logo">
+			<input type="text" class="form-control">
+			<span class="input-group-text"><i class="fa fa-search"></i></span>
+		</div>
+		<div class="menu-bar">
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!------side menu section----->
+	<div class="header">
+		<div class="side-menu" id="side-menu">
+			<ul>
+				<li>Edible oils<i class="fa fa-angle-right"></i>
+					<ul>
+						<a href="edible.html"><li>Sunflower oil</li></a>
+						<a href="edible.html"><li>soybean oil</li></a>
+						<a href="edible.html"><li>Flaxseed oil</li></a>
+						<a href="edible.html"><li>Rapseed oil</li></a>
+						<a href="edible.html"><li>Palm oil</li></a>
+						<a href="edible.html"><li>Corn oil</li></a>
+						<a href="edible.html"><li>Canola oil</li></a>
+						<a href="edible.html"><li>Coconut oil</li></a>
+						<a href="edible.html"><li>Sesame oil</li></a>
+						<a href="edible.html"><li>Peanut oil</li></a>
+						<a href="edible.html"><li>Olive Oil</li></a>
+					</ul>
+				</li>
+
+				<li>Organic oils<i class="fa fa-angle-right"></i>
+					<ul>
+						<a href="organic.html"><li>Grape seed oil</li></a>
+						<a href="organic.html"><li>Hemp seed oil</li></a>
+						<a href="organic.html"><li>Pumpkin seed oil</li></a>
+						<a href="organic.html"><li>Avocado oil</li></a>
+						<a href="organic.html"><li>Ginger oil</li></a>
+						<a href="organic.html"><li>Garlic oil</li></a>
+						<a href="organic.html"><li>Almond oil</li></a>
+						<a href="organic.html"><li>Fish oil</li></a>
+						<a href="organic.html"><li>Bee honey</li></a>
+					</ul>
+				</li>
+
+				<li>Grains<i class="fa fa-angle-right"></i>
+					<ul>
+						<a href="grains.html"><li>Wheat</li></a>
+						<a href="grains.html"><li>Yellow Corn</li></a>
+						<a href="grains.html"><li>Soybean</li></a>
+						<a href="grains.html"><li>Barley</li></a>
+					</ul>
+				</li>
+
+				<li>Seeds<i class="fa fa-angle-right"></i>
+					<ul>
+						<a href="seeds.html"><li>Mustard seed</li></a>
+						<a href="seeds.html"><li>Green cardamom</li></a>
+						<a href="seeds.html"><li>Sunflower seed</li></a>
+						<a href="seeds.html"><li>Rapeseed</li></a>
+						<a href="seeds.html"><li>Pumpkin seed</li></a>
+						<a href="seeds.html"><li>Flaxseed</li></a>
+						<a href="seeds.html"><li>Sesame seed</li></a>
+						<a href="seeds.html"><li>Jatropha seeds</li></a>
+					</ul>
+				</li>
+
+				<li>Nuts<i class="fa fa-angle-right"></i>
+					<ul>
+						<a href="nuts.html"><li>Walnut</li></a>
+						<a href="nuts.html"><li>Cashew nut</li></a>
+						<a href="nuts.html"><li>Peanut</li></a>
+						<a href="nuts.html"><li>Almond</li></a>
+						<a href="nuts.html"><li>Pistachio</li></a>
+						<a href="nuts.html"><li>Hazelnut</li></a>
+					</ul>
+				</li>
+
+				<li>Pulses<i class="fa fa-angle-right"></i>
+					<ul>
+						<a href="lentile.html"><li>Yellow peas</li></a>
+						<a href="lentile.html"><li>Red lentils</li></a>
+						<a href="lentile.html"><li>Green peas</li></a>
+						<a href="lentile.html"><li>Whole Mung</li></a>
+						<a href="lentile.html"><li>Beans</li></a>
+						<a href="lentile.html"><li>Winter Vetch</li></a>
+						<a href="lentile.html"><li>Chick peas</li></a>
+					</ul>
+				</li>
+
+				<li>Dairy<i class="fa fa-angle-right"></i>
+					<ul>
+						<a href="dairy.html"><li>Honey</li></a>
+						<a href="dairy.html"><li>Unsalted butter</li></a>
+						<a href="dairy.html"><li>Full cream milk</li></a>
+						<a href="dairy.html"><li>Butter salted</li></a>
+						<a href="dairy.html"><li>Skimmed milk</li></a>
+						<a href="dairy.html"><li>Egg powder</li></a>
+					</ul>
+				</li>
+
+				<li>Sugar<i class="fa fa-angle-right"></i>
+					<ul>
+						<a href="sugar.html"><li>Beet sugar</li></a>
+						<a href="sugar.html"><li>Granulated sugar</li></a>
+						<a href="sugar.html"><li>Brown Sugar</li></a>
+						<a href="sugar.html"><li>Steviacane</li></a>
+					</ul>
+				</li>
+
+				<li>Animal feed<i class="fa fa-angle-right"></i>
+					<ul>
+						<a href="animals.html"><li>Soybean meal</li></a>
+						<a href="animals.html"><li>Feed grains</li></a>
+						<a href="animals.html"><li>Aquatic feed</li></a>
+						<a href="animals.html"><li>Feed barley</li></a>
+						<a href="animals.html"><li>Rapeseed meal</li></a>
+						<a href="animals.html"><li>Sunflower meal</li></a>
+					</ul>
+				</li>
+
+				<li>Poultry<i class="fa fa-angle-right"></i>
+					<ul>
+						<a href="Poultry.html"><li>Chicken Breast</li></a>
+						<a href="Poultry.html"><li>Frozen Chicken</li></a>
+						<a href="Poultry.html"><li>Chicken Wings</li></a>
+						<a href="Poultry.html"><li>Chicken Eggs</li></a>
+						<a href="Poutry.html"><li>Chicken leg</li></a>
+						<a href="Poultry.html"><li>Chicken Drumstick</li></a>
+						<a href="Poultry.html"><li>Chicken feet</li></a>
+						<a href="Poultry.html"><li>Sea food</li></a>
+					</ul>
+				</li>
+
+				<li>Vegetables<i class="fa fa-angle-right"></i>
+					<ul>
+						<a href="fruits.html"><li>Fresh potato</li></a>
+						<a href="fruits.html"><li>Fruits</li></a>
+						<a href="fruits.html"><li>Vegetable</li></a>
+					</ul>
+				</li>
+
+				<li>Others<i class="fa fa-angle-right"></i>
+					<ul>
+						<a href="hides.html"><li>Hides</li></a>
+						<a href="charcoal.html"><li>Charcoal</li></a>
+						<a href="pellets.html"><li>Pellet</li></a>
+						<a href="gallstones.html"><li>Gallstones</li></a>
+						<a href="coke.html"><li>Petcoke</li></a>
+						<a href="dap.html"><li>Dap</li></a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+        
+        <!------Slider image boostraph----->
+		<div class="slider">
+
+			<div id="slider" class="carousel slide" data-ride="carousel">
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/grain-1.jpeg" class="d-block img-fluid" height="400px" width="">
+      <div class="carousel-caption">
+        <h5 class="animate__animated animate__bounceInDown">Who We Are</h5>
+        <p class="animate__animated animate__fadeInTopRight animate__delay-1.5s">One of the largest best world leading agricultural producer and exporter.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/sunflower-oil13.jpg" class="d-block img-fluid" height="400px" width="">
+      <div class="carousel-caption">
+        <h5 class="animate__animated animate__fadeInUp animate__delay-2.5s">Our Value</h5>
+        <p class="animate__animated animate__fadeInTopRight animate__delay-1.8s">We value everything we do, as well as our customers.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="image/soybeam-1.jpg" class="d-block img-fluid" height="">
+      <div class="carousel-caption">
+        <h5 class="animate__animated animate__flip">Sustainability</h5>
+        <p class="animate__animated animate__lightSpeedInLeft animate__delay-2s">Remains central to our business model.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="image/vegetables-1.jpg" class="d-block img-fluid" height="">
+      <div class="carousel-caption">
+        <h5 class="animate__animated animate__zoomInRight">Why Chose Us?</h5>
+        <p class="animate__animated animate__lightSpeedInLeft animate__delay-1.8s">We are reliable with our prompt method of delivery.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="image/animals-2.jpg" class="d-block img-fluid" height="">
+      <div class="carousel-caption">
+        <h5 class="animate__animated animate__zoomInRight">Humility</h5>
+        <p class="animate__animated animate__lightSpeedInLeft animate__delay-1.8s">We recognize our responsibility to foster long-term stability and growth and do business with intergrity.</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <div class="overlay-top"></div>	
+</div>
+		
+		</div>
+
+
+	</div>
+
+
+	<!------About sub-section----->
+	<section class="about-sub">
+		<div class="container">
+			<div class="about-holder">
+				<h1>About Us</h1>
+				<div class="border-bottom">
+					
+				</div>
+				<p>Agrosumy – One of the major largest Kazakhstan manufacturer and exporter of agricultural products from the Black Sea region to global markets. We’re a global leader in human and animal nutrition and the world’s premier agricultural origination and processing company. Our breadth, depth, insights, facilities and logistical expertise give us unparalleled capabilities to meet needs for food, beverages, health and wellness, and more.Agrosumy exports its products into more than 55 countries across the globe, with industry-advancing innovations, a complete portfolio of ingredients and solutions to meet any taste, and a commitment to sustainability, we give customers an edge in solving the nutritional challenges of today and tomorrow. From the seed of the idea to the outcome of the solution, we enrich the quality of life the world over.</p>
+				<button class="about-btn"><a href="about.html">Read More</a></button>	
+			</div>
+		</div>
+	</section>
+
+	<!------feautured categories----->
+	<section class="featured-categories">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="image/canola-oil3.jpg" width="300px" height="300px">
+				</div>
+				<div class="col-md-4">
+					<img src="image/comodity-3.jpg" width="300px" height="300px">
+				</div>
+				<div class="col-md-4">
+					<img src="image/vegetables-1.jpg" width="300px" height="300px">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!------who we are section----->
+	<section class="about">
+		<div class="opacity-box">
+		<div class="container">
+			<div class="content-hd">
+			<h3>Who We Are</h3>
+			<p>Agrosumy is a global merchant and processor of agricultural goods. Guided by our strong values and building on our rich heritage, we work to realize our vision for a safe and sustainable future, contributing to the global effort to provide sustenance for a growing population.</p>
+			</div>
+		    </div>
+		    <div class="overlay-half"></div>
+		    </div>
+	</section>
+
+
+	<!------on sale products----->
+	<section class="on-sale">
+		<div class="container">
+			<div class="title-box">
+				<h2>Our Products</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="edible.html"><img src="image/sunflower-oil8.jpg" height=""></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<h3>Edible Vegetable Oils</h3>
+					<h5><a href="edible.html">Read More</a></h5>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="organic.html"><img src="image/ginger-oil4.jpg" height=""></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Organic Oils</h3>
+					<h5><a href="organic.html">Read More</a></h5>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="organic.html"><img src="image/bee-honey3.jpg" height="250px"></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Bee Honey</h3>
+					<h5><a href="organic.html">Read More</a></h5>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="grains.html"><img src="image/comodity-6.jpg" height="250px"></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Grains</h3>
+					<h5><a href="grains.html">Read More</a></h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="seeds.html"><img src="image/mustard-seed1.jpg" height=""></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<h3>Seeds</h3>
+					<h5><a href="seeds.html">Read More</a></h5>
+
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="nuts.html"><img src="image/nuts-1.jpg" height=""></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Nuts</h3>
+					<h5><a href="nuts.html">Read More</a></h5>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="lentile.html"><img src="image/comodity-7.jpg" height="250px"></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Pulses</h3>
+					<h5><a href="lentile.html">Read More</a></h5>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="dairy.html"><img src="image/dairy-1.jpg" height="250px"></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Dairy</h3>
+					<h5><a href="dairy.html">Read More</a></h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="sugar.html"><img src="image/sugar-1.jpg" height="250px" width=""></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<h3>Sugar</h3>
+					<h5><a href="sugar.html">Read More</a></h5>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="animals.html"><img src="image/animals-3.jpg" height=""></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Animal Feed</h3>
+					<h5><a href="animals.html">Read More</a></h5>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="poultry.html"><img src="image/whole-chicken1.jpg" height="250px"></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Poultry</h3>
+					<h5><a href="poultry.html">Read More</a></h5>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="fruits.html"><img src="image/vegetables-1.jpg" height="250px"></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Vegetable and fruits</h3>
+					<h5><a href="fruits.html">Read More</a></h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="hides.html"><img src="image/cow-hide4.jpg" height=""></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<h3>Hides</h3>
+					<h5><a href="hides.html">Read More</a></h5>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="charcoal.html"><img src="image/charcoal-6.jpg" height=""></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Charcoal</h3>
+					<h5><a href="charcoal.html">Read More</a></h5>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="pellets.html"><img src="image/wood-pellet3.jpg" height="250px"></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Pellet</h3>
+					<h5><a href="pellets.html">Read More</a></h5>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="gallstones.html"><img src="image/gallstone-ox.jpg" height="250px"></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Gallstones</h3>
+					<h5><a href="gallstones.html">Read More</a></h5>
+					</div>
+				</div>
+
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="coke.html"><img src="image/pet-coke4.jpg" height="250px"></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Petcoke</h3>
+					<h5><a href="coke.html">Read More</a></h5>
+					</div>
+				</div>
+
+
+				<div class="col-md-3">
+					<div class="top-product">
+						<a href="dap.html"><img src="image/dap-1.jpg" height="250px"></a>
+						<div class="overlay-right">
+						<button type="button" class="btn btn-secondary" title="Quick shop">
+							<i class="fa fa-eye"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to wishlist">
+							<i class="fa fa-heart-o"></i>
+						</button>
+						<button type="button" class="btn btn-secondary" title="Add to cart">
+						 <i class="fa fa-shopping-cart"></i>
+						</button>
+						</div>
+					</div>
+
+				<div class="bottom-product text-center">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<h3>Dap</h3>
+					<h5><a href="dap.html">Read More</a></h5>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<hr>
+
+	<!------view all products----->
+	<div class="all-products">
+		<div class="container">
+			<div class="product-box">
+			<p><a href="products.html">View All Products</a></p>
+			</div>
+		</div>
+	</div>
+
+	<!------Why choose us----->
+	<div class="why-us">
+		
+			<h1>Choosing us</h1>
+			<div class="row">
+				<div class="why-grid">
+				<div class="why-center">
+					<h3>High Quality Products</h3>
+					<p>The quality of agricultural products are the most
+                    important factor for purchasing these products, our products are in compliance with high quality requirements of the European Union.</p>
+                    <i class="fa fa-check-circle-o fa-4x"></i>
+				</div>
+
+				<div class="why-center">
+					<h3>Free Consultant</h3>
+					<p>Our team work is well-planned, decisions are verified, and relations with suppliers as well as customers are clear and transparent.</p>
+					<i class="fa fa-volume-control-phone fa-4x"></i>
+				</div>
+
+				<div class="why-center">
+					<h3>Business Commitment</h3>
+					<p>Our business commitment begins from initial negotiation
+                    to finalize a transaction in order to receive our
+                    customers business satisfaction.</p>
+                    <i class="fa fa-handshake-o fa-4x"></i>
+				</div>
+			</div>
+			</div>
+	
+	</div>
+
+	<!------website features----->
+	<section class="web-feature">
+		<div class="container">
+		
+			<div class="row">
+			<div class="col-md-3 feature-box">
+				<img src="image/gurantee.png">
+				<div class="feauture-text">
+					<p><b>100% Original Quality </b>all available at company</p>
+				</div>
+			</div>
+			<div class="col-md-3 feature-box">
+				<img src="image/arrow2.png">
+				<div class="feauture-text">
+					<p><b>Shipment within 15 days </b>of recieving order.</p>
+				</div>
+			</div>
+			<div class="col-md-3 feature-box">
+				<img src="image/delivery.png">
+				<div class="feauture-text">
+					<p><b>Get free sample for every </b>order on larger quantity</p>
+				</div>
+			</div>
+			<div class="col-md-3 feature-box">
+				<img src="image/card.png">
+				<div class="feauture-text">
+					<p><b>Suitable payment term through multiple </b>options (card/net banking)</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<!------footer----->
+	<section class="footer">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-3">
+					<h1>Our Vision</h1>
+					<p class="color">We work to realize our vision for a safe and sustainable future, contributing to the global effort to provide sustenance for a growing population.</p>
+				</div>
+
+				<div class="col-md-3">
+					<h1>Useful Links</h1>
+					<p><a href="index.html">Home</a></p>
+					<p><a href="products.html">Products</a></p>
+					<p><a href="about.html">About Us</a></p>
+					<p><a href="contact.html">Contact Us</a></p>
+				</div>
+
+				<div class="col-md-3">
+					<h1>Contact Us</h1>
+					<p><i class="fa fa-envelope-o"></i>info@agrosumy.com<br></p>
+					<p><i class="fa fa-whatsapp"></i><i class="fa fa-phone"></i>+380 95 554 8161</p>
+					<p><i class="fa fa-whatsapp"></i><i class="fa fa-phone"></i>+7(926) 808-23-86</p>
+					<p><i class="fa fa-map-marker"></i>6a, kv. 2/3, ulitsa Toreza M Shymkent Kazakhstan</p>
+				</div>
+
+				<div class="col-md-3 footer-image">
+					<h1>Our Company</h1>
+
+					<iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.6785913081585!2d32.24405855070854!3d48.50105487915229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d042964cd47a85%3A0xc0d72b4fd74661be!2sSoborna%20St%2C%2022%2C%20Kirovohrad%2C%20Kirovohrads&#39;ka%20oblast%2C%20Kazakhstan%2C%2025000!5e0!3m2!1sde!2sde!4v1608671399422!5m2!1sde!2sde" width="180"></iframe>
+				</div>
+
+			</div>
+			<hr>
+			<p class="copyright">All right reserved <i class="fa fa-heart-o"></i> &copy2023 Agrosumy LLC</p>
+		</div>
+	</section>
+
+
+	<script>
+		function openmenu()
+		{
+			document.getElementById("side-menu").style.display="block";
+			document.getElementById("menu-btn").style.display="none";
+			document.getElementById("close-btn").style.display="block";
+		}
+		function closemenu()
+		{
+			document.getElementById("side-menu").style.display="none";
+			document.getElementById("menu-btn").style.display="block";
+			document.getElementById("close-btn").style.display="none";
+		}
+	</script>
+
+</body>
+</html>
